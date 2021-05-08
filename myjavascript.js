@@ -14,6 +14,8 @@ var cp='btn1'
 var head=document.getElementById('head')
 var restart=document.getElementById('restart')
 var guduri=document.getElementById('guduri')
+var possibility=document.getElementById("possibility")
+possibility.style.color='#ff00d0'
 
 console.log(head);
 //heading color change function
