@@ -12,7 +12,7 @@ var cp='btn1'
 
 
 var head=document.getElementById('head')
-var restart=document.getElementById('restart')
+//var restart=document.getElementById('restart')
 var guduri=document.getElementById('guduri')
 var possibility=document.getElementById("possibility")
 possibility.style.color='#ff00d0'
@@ -33,7 +33,7 @@ function changeColor() {
   //p1.style.color=color
 //  p2.style.color=color
   guduri.style.color=color
-  restart.style.color=color
+  //restart.style.color=color
 }
 setInterval("changeColor()",500)
 
