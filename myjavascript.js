@@ -70,7 +70,8 @@ one.addEventListener('click',function (){
       if ((two.textContent==='X' && three.textContent==='X')||
       (four.textContent==='X' && seven.textContent==='X')||
       (five.textContent==='X' && nine.textContent==='X')) {
-        alert("First PLayer Won the Game....!")
+        alert("You Won the Game....!")
+        return ''
       }
     botOne('one')
     }
@@ -89,7 +90,8 @@ two.addEventListener('click',function () {
       two.textContent='X'
       if ((one.textContent==='X' && three.textContent==='X')||
       (five.textContent==='X' && eight.textContent==='X')) {
-        alert("First PLayer Won the Game....!")
+        alert("you Won the Game....!")
+        return ''
       }
       botTwo('two')
     }
@@ -108,7 +110,8 @@ three.addEventListener('click',function () {
       if ((two.textContent==='X' && one.textContent==='X')||
       (five.textContent==='X' && seven.textContent==='X')||
       (six.textContent==='X' && nine.textContent==='X')) {
-        alert("First PLayer Won the Game....!")
+        alert("you Won the Game....!")
+        return ''
       }
       botThree('three')
     }
@@ -125,7 +128,8 @@ four.addEventListener('click',function () {
       four.textContent='X'
       if ((five.textContent==='X' && six.textContent==='X')||
       (one.textContent==='X' && seven.textContent==='X')){
-        alert("First PLayer Won the Game....!")
+        alert("you Won the Game....!")
+        return ''
       }
     botFour('four')
   }
@@ -143,7 +147,8 @@ six.addEventListener('click',function () {
       six.textContent='X'
       if ((five.textContent==='X' && four.textContent==='X')||
       (three.textContent==='X' && nine.textContent==='X')) {
-        alert("First PLayer Won the Game....!")
+        alert("you Won the Game....!")
+        return ''
       }
     botSix('six')
   }
@@ -162,7 +167,8 @@ seven.addEventListener('click',function () {
       if ((five.textContent==='X' && three.textContent==='X')||
       (four.textContent==='X' && one.textContent==='X')||
       (eight.textContent==='X' && nine.textContent==='X')) {
-        alert("First PLayer Won the Game....!")
+        alert("you Won the Game....!")
+        return ''
       }
   botSeven("seven")
   }
@@ -179,7 +185,8 @@ eight.addEventListener('click',function () {
       eight.textContent='X'
       if ((seven.textContent==='X' && nine.textContent==='X')||
       (five.textContent==='X' && two.textContent==='X')){
-        alert("First PLayer Won the Game....!")
+        alert("you Won the Game....!")
+        return ''
       }
     botEight('eight')
   }
@@ -197,7 +204,8 @@ nine.addEventListener('click',function () {
       if ((five.textContent==='X' && one.textContent==='X')||
       (eight.textContent==='X' && seven.textContent==='X')||
       (six.textContent==='X' && three.textContent==='X')) {
-        alert("First PLayer Won the Game....!")
+        alert("You Won the Game....!")
+        return ''
       }
     botNine('nine')
   }
@@ -218,7 +226,8 @@ five.addEventListener('click',function () {
       (three.textContent==='X' && seven.textContent==='X')||
       (two.textContent==='X' && eight.textContent==='X')||
        (four.textContent==='X' && six.textContent==='X')){
-        alert("First PLayer Won the Game....!")
+         alert("you Won the Game....!")
+         return ''
       }
     }
     botFive('five')
@@ -249,18 +258,21 @@ function botOne(prev) {
         if (six.textContent==='') {
         six.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
       else if (four.textContent==='O' && six.textContent==='O') {
         if (five.textContent==='') {
         five.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
       else{
        if (four.textContent==='') {
         four.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
 
     }
   }
@@ -272,18 +284,21 @@ function botOne(prev) {
         if (nine.textContent==='') {
           nine.textContent='O'
           alert("You Lost the Game...Try Again..!")
+          return ''
         }
       }
       else if (seven.textContent==='O' && nine.textContent==='O') {
         if (eight.textContent==='') {
           eight.textContent='O'
           alert("You Lost the Game...Try Again..!")
+          return ''
         }
       }
       else {
         if (seven.textContent==='') {
           seven.textContent='O'
           alert("You Lost the Game...Try Again..!")
+          return ''
         }
       }
     }
@@ -294,18 +309,21 @@ function botOne(prev) {
         if (eight.textContent==='') {
           eight.textContent='O'
           alert("You Lost the Game...Try Again..!")
+          return ''
         }
       }
       else if (two.textContent==='O' && eight.textContent==='O') {
         if (five.textContent==='') {
           five.textContent='O'
           alert("You Lost the Game...Try Again..!")
+          return ''
         }
       }
       else {
         if (two.textContent==='') {
           two.textContent='O'
           alert("You Lost the Game...Try Again..!")
+          return ''
         }
       }
     }
@@ -316,18 +334,21 @@ function botOne(prev) {
         if (nine.textContent==='') {
           nine.textContent='O'
           alert("You Lost the Game...Try Again..!")
+          return ''
         }
       }
       else if (three.textContent==='O' && nine.textContent==='O') {
         if (six.textContent==='') {
           six.textContent='O'
           alert("You Lost the Game...Try Again..!")
+          return ''
         }
       }
       else {
         if (three.textContent==='') {
           three.textContent='O'
           alert("You Lost the Game...Try Again..!")
+          return ''
         }
       }
     }
@@ -338,18 +359,21 @@ function botOne(prev) {
         if (seven.textContent==='') {
           seven.textContent='O'
           alert("You Lost the Game...Try Again..!")
+          return ''
         }
       }
       else if (three.textContent==='O' && seven.textContent==='O') {
         if (five.textContent==='') {
           five.textContent='O'
           alert("You Lost the Game...Try Again..!")
+          return ''
         }
       }
       else {
         if (three.textContent==='') {
           three.textContent='O'
           alert("You Lost the Game...Try Again..!")
+          return ''
         }
       }
     }
@@ -386,6 +410,7 @@ function botOne(prev) {
           }
           else {
             alert("Game Tied no chance of Winning...Try Again...!")
+            return ''
           }
         }
     }
@@ -400,18 +425,21 @@ function botTwo(prev) {
       if (six.textContent==='') {
       six.textContent='O'
       alert("You Lost the Game...Try Again..!")
+      return ''
     }
   }
     else if (four.textContent==='O' && six.textContent==='O') {
       if (five.textContent==='') {
       five.textContent='O'
       alert("You Lost the Game...Try Again..!")
+      return ''
     }
   }
     else{
      if (four.textContent==='') {
       four.textContent='O'
       alert("You Lost the Game...Try Again..!")
+      return ''
 
   }
 }
@@ -423,18 +451,22 @@ function botTwo(prev) {
       if (nine.textContent==='') {
         nine.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
+
       }
     }
     else if (seven.textContent==='O' && nine.textContent==='O') {
       if (eight.textContent==='') {
         eight.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else {
       if (seven.textContent==='') {
         seven.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
   }
@@ -445,18 +477,21 @@ function botTwo(prev) {
       if (seven.textContent==='') {
         seven.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else if (one.textContent==='O' && seven.textContent==='O') {
       if (four.textContent==='') {
         four.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else {
       if (one.textContent==='') {
         one.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
   }
@@ -467,18 +502,21 @@ function botTwo(prev) {
       if (nine.textContent==='') {
         nine.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else if (three.textContent==='O' && nine.textContent==='O') {
       if (six.textContent==='') {
         six.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else {
       if (three.textContent==='') {
         three.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
   }
@@ -489,18 +527,21 @@ function botTwo(prev) {
       if (seven.textContent==='') {
         seven.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else if (three.textContent==='O' && seven.textContent==='O') {
       if (five.textContent==='') {
         five.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else {
       if (three.textContent==='') {
         three.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
   }
@@ -511,18 +552,21 @@ function botTwo(prev) {
       if (nine.textContent==='') {
         nine.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else if (five.textContent==='O' && nine.textContent==='O') {
       if (five.textContent==='') {
         five.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else {
       if (one.textContent==='') {
         one.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
   }
@@ -570,6 +614,7 @@ function botTwo(prev) {
         }
         else {
           alert("Game Tied no chance of Winning...Try Again...!")
+          return ''
         }
       }
 }
@@ -581,18 +626,21 @@ function botThree(prev) {
       if (six.textContent==='') {
         six.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else if (four.textContent==='O' && six.textContent==='O') {
       if (five.textContent==='') {
         five.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else {
       if (four.textContent==='') {
         four.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
   }
@@ -603,18 +651,21 @@ function botThree(prev) {
       if (nine.textContent==='') {
         nine.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else if (seven.textContent==='O' && nine.textContent==='O') {
       if (eight.textContent==='') {
         eight.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else {
       if (seven.textContent==='') {
         seven.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
   }
@@ -625,18 +676,21 @@ function botThree(prev) {
       if (eight.textContent==='') {
         eight.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else if (two.textContent==='O' && eight.textContent==='O') {
       if (five.textContent==='') {
         five.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else {
       if (two.textContent==='') {
         two.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
   }
@@ -647,18 +701,21 @@ function botThree(prev) {
       if (seven.textContent==='') {
         seven.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else if (one.textContent==='O' && seven.textContent==='O') {
       if (four.textContent==='') {
         four.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else {
       if (one.textContent==='') {
         one.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
   }
@@ -669,18 +726,21 @@ function botThree(prev) {
       if (nine.textContent==='') {
         nine.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else if (five.textContent==='O' && nine.textContent==='O') {
       if (five.textContent==='') {
         five.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else {
       if (one.textContent==='') {
         one.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
   }
@@ -716,6 +776,7 @@ function botThree(prev) {
       }
       else {
         alert("Game Tied no chance of Winning...Try Again...!")
+        return ''
       }
     }
   }
@@ -728,18 +789,21 @@ function botFour(prev) {
       if (three.textContent==='') {
         three.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else if (one.textContent==='O' && three.textContent==='O') {
       if (two.textContent==='') {
         two.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else {
       if (one.textContent==='') {
         one.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
   }
@@ -750,18 +814,21 @@ function botFour(prev) {
       if (nine.textContent==='') {
         nine.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else if (seven.textContent==='O' && nine.textContent==='O') {
       if (eight.textContent==='') {
         eight.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else {
       if (seven.textContent==='') {
         seven.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
   }
@@ -772,18 +839,21 @@ function botFour(prev) {
       if (eight.textContent==='') {
         eight.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else if (two.textContent==='O' && eight.textContent==='O') {
       if (five.textContent==='') {
         five.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else {
       if (two.textContent==='') {
         two.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
   }
@@ -794,18 +864,21 @@ function botFour(prev) {
       if (nine.textContent==='') {
         nine.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else if (three.textContent==='O' && nine.textContent==='O') {
       if (six.textContent==='') {
         six.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else {
       if (three.textContent==='') {
         three.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
   }
@@ -816,18 +889,21 @@ function botFour(prev) {
       if (seven.textContent==='') {
         seven.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else if (three.textContent==='O' && seven.textContent==='O') {
       if (five.textContent==='') {
         five.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else {
       if (three.textContent==='') {
         three.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
   }
@@ -838,18 +914,21 @@ function botFour(prev) {
       if (nine.textContent==='') {
         nine.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else if (five.textContent==='O' && nine.textContent==='O') {
       if (five.textContent==='') {
         five.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else {
       if (one.textContent==='') {
         one.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
   }
@@ -898,6 +977,7 @@ function botFour(prev) {
         }
         else {
           alert("Game Tied no chance of Winning...Try Again...!")
+          return ''
         }
       }
 }
@@ -965,18 +1045,21 @@ function botSix(prev) {
       if (three.textContent==='') {
         three.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else if (one.textContent==='O' && three.textContent==='O') {
       if (two.textContent==='') {
         two.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else {
       if (one.textContent==='') {
         one.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
   }
@@ -987,18 +1070,21 @@ function botSix(prev) {
       if (nine.textContent==='') {
         nine.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else if (seven.textContent==='O' && nine.textContent==='O') {
       if (eight.textContent==='') {
         eight.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else {
       if (seven.textContent==='') {
         seven.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
   }
@@ -1009,18 +1095,21 @@ function botSix(prev) {
       if (eight.textContent==='') {
         eight.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else if (two.textContent==='O' && eight.textContent==='O') {
       if (five.textContent==='') {
         five.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else {
       if (two.textContent==='') {
         two.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
   }
@@ -1030,14 +1119,17 @@ function botSix(prev) {
     if (one.textContent==='O' && four.textContent==='O') {
       seven.textContent='O'
       alert("You Lost the Game...Try Again..!")
+      return ''
     }
     else if (one.textContent==='O' && seven.textContent==='O') {
       four.textContent='O'
       alert("You Lost the Game...Try Again..!")
+      return ''
     }
     else {
       one.textContent='O'
       alert("You Lost the Game...Try Again..!")
+      return ''
     }
   }
   else if ((three.textContent==='O' && five.textContent==='O' && seven.textContent==='')||
@@ -1047,18 +1139,21 @@ function botSix(prev) {
       if (seven.textContent==='') {
         seven.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else if (three.textContent==='O' && seven.textContent==='O') {
       if (five.textContent==='') {
         five.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else {
       if (three.textContent==='') {
         three.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
   }
@@ -1069,18 +1164,21 @@ function botSix(prev) {
       if (nine.textContent==='') {
         nine.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else if (five.textContent==='O' && nine.textContent==='O') {
       if (five.textContent==='') {
         five.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else {
       if (one.textContent==='') {
         one.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
   }
@@ -1090,7 +1188,7 @@ function botSix(prev) {
         botWinning()
       }
       else {
-        nine.textContent='O'
+        playerWinning()
         botWinning()
       }
     }
@@ -1129,6 +1227,7 @@ function botSix(prev) {
         }
         else {
           alert("Game Tied no chance of Winning...Try Again...!")
+          return ''
         }
       }
 }
@@ -1141,18 +1240,21 @@ function botSeven(prev) {
       if (three.textContent==='') {
         three.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else if (one.textContent==='O' && three.textContent==='O') {
       if (two.textContent==='') {
         two.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else {
       if (one.textContent==='') {
         one.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
   }
@@ -1163,18 +1265,21 @@ function botSeven(prev) {
       if (six.textContent==='') {
         six.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else if (four.textContent==='O' && six.textContent==='O') {
       if (five.textContent==='') {
         five.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else {
       if (four.textContent==='') {
         four.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
   }
@@ -1185,18 +1290,21 @@ function botSeven(prev) {
       if (nine.textContent==='') {
         nine.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else if (three.textContent==='O' && nine.textContent==='O') {
       if (six.textContent==='') {
         six.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else {
       if (three.textContent==='') {
         three.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
   }
@@ -1207,18 +1315,21 @@ function botSeven(prev) {
       if (eight.textContent==='') {
         eight.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else if (two.textContent==='O' && eight.textContent==='O') {
       if (five.textContent==='') {
         five.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else {
       if (two.textContent==='') {
         two.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
   }
@@ -1228,14 +1339,17 @@ function botSeven(prev) {
     if (one.textContent==='O' && five.textContent==='O') {
       nine.textContent='O'
       alert("You Lost the Game...Try Again..!")
+      return ''
     }
     else if (one.textContent==='O' && nine.textContent==='O') {
       five.textContent='O'
       alert("You Lost the Game...Try Again..!")
+      return ''
     }
     else {
       one.textContent='O'
       alert("You Lost the Game...Try Again..!")
+      return ''
     }
   }
     else if ((one.textContent==='X') &&(four.textContent==='')||(one.textContent==='' && four.textContent==='X')){
@@ -1267,6 +1381,7 @@ function botSeven(prev) {
       }
       else {
         alert("Game Tied no chance of Winning...Try Again...!")
+        return ''
       }
     }
   }
@@ -1280,18 +1395,21 @@ function botEight(prev) {
       if (six.textContent==='') {
       six.textContent='O'
       alert("You Lost the Game...Try Again..!")
+      return ''
     }
   }
     else if (four.textContent==='O' && six.textContent==='O') {
       if (five.textContent==='') {
       five.textContent='O'
       alert("You Lost the Game...Try Again..!")
+      return ''
     }
   }
     else{
      if (four.textContent==='') {
       four.textContent='O'
       alert("You Lost the Game...Try Again..!")
+      return ''
 
   }
 }
@@ -1302,14 +1420,17 @@ if ((one.textContent==='O' && two.textContent==='O' && three.textContent==='')||
   if (one.textContent==='O' && two.textContent==='O') {
     three.textContent='O'
     alert("You Lost the Game...Try Again..!")
+    return ''
   }
   else if (one.textContent==='O' && three.textContent==='O') {
     two.textContent='O'
     alert("You Lost the Game...Try Again..!")
+    return ''
   }
   else {
     one.textContent='O'
     alert("You Lost the Game...Try Again..!")
+    return ''
   }
 }
   else if ((one.textContent==='O' && four.textContent==='O' && seven.textContent==='' )||
@@ -1319,18 +1440,21 @@ if ((one.textContent==='O' && two.textContent==='O' && three.textContent==='')||
       if (seven.textContent==='') {
         seven.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else if (one.textContent==='O' && seven.textContent==='O') {
       if (four.textContent==='') {
         four.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else {
       if (one.textContent==='') {
         one.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
   }
@@ -1341,18 +1465,21 @@ if ((one.textContent==='O' && two.textContent==='O' && three.textContent==='')||
       if (nine.textContent==='') {
         nine.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else if (three.textContent==='O' && nine.textContent==='O') {
       if (six.textContent==='') {
         six.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else {
       if (three.textContent==='') {
         three.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
   }
@@ -1363,18 +1490,21 @@ if ((one.textContent==='O' && two.textContent==='O' && three.textContent==='')||
       if (seven.textContent==='') {
         seven.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else if (three.textContent==='O' && seven.textContent==='O') {
       if (five.textContent==='') {
         five.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else {
       if (three.textContent==='') {
         three.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
   }
@@ -1385,18 +1515,21 @@ if ((one.textContent==='O' && two.textContent==='O' && three.textContent==='')||
       if (nine.textContent==='') {
         nine.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else if (five.textContent==='O' && nine.textContent==='O') {
       if (five.textContent==='') {
         five.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
     else {
       if (one.textContent==='') {
         one.textContent='O'
         alert("You Lost the Game...Try Again..!")
+        return ''
       }
     }
   }
@@ -1445,6 +1578,7 @@ if ((one.textContent==='O' && two.textContent==='O' && three.textContent==='')||
         }
         else {
           alert("Game Tied no chance of Winning...Try Again...!")
+          return ''
         }
       }
 }
@@ -1456,14 +1590,17 @@ function botNine(prev) {
     if (one.textContent==='O' && two.textContent==='O') {
       three.textContent='O'
       alert("You Lost the Game...Try Again..!")
+      return ''
     }
     else if (one.textContent==='O' && three.textContent==='O') {
       two.textContent='O'
       alert("You Lost the Game...Try Again..!")
+      return ''
     }
     else {
       one.textContent='O'
       alert("You Lost the Game...Try Again..!")
+      return ''
     }
   }
   else if ((four.textContent==='O' && five.textContent==='O' && six.textContent==='')||
@@ -1472,14 +1609,17 @@ function botNine(prev) {
     if (four.textContent==='O' && five.textContent==='O') {
       six.textContent='O'
       alert("You Lost the Game...Try Again..!")
+      return ''
     }
     else if (four.textContent==='O' && six.textContent==='O') {
       five.textContent='O'
       alert("You Lost the Game...Try Again..!")
+      return ''
     }
     else {
       four.textContent='O'
       alert("You Lost the Game...Try Again..!")
+      return ''
     }
   }
   else if ((one.textContent==='O' && four.textContent==='O' && seven.textContent==='')||
@@ -1488,14 +1628,17 @@ function botNine(prev) {
     if (one.textContent==='O' && four.textContent==='O') {
       seven.textContent='O'
       alert("You Lost the Game...Try Again..!")
+      return ''
     }
     else if (one.textContent==='O' && seven.textContent==='O') {
       four.textContent='O'
       alert("You Lost the Game...Try Again..!")
+      return ''
     }
     else {
       one.textContent='O'
       alert("You Lost the Game...Try Again..!")
+      return ''
     }
   }
   else if ((two.textContent==='O' && five.textContent==='O' && eight.textContent==='')||
@@ -1504,14 +1647,17 @@ function botNine(prev) {
     if (two.textContent==='O' && five.textContent==='O') {
       eight.textContent='O'
       alert("You Lost the Game...Try Again..!")
+      return ''
     }
     else if (two.textContent==='O' && eight.textContent==='O') {
       five.textContent='O'
       alert("You Lost the Game...Try Again..!")
+      return ''
     }
     else {
       two.textContent='O'
       alert("You Lost the Game...Try Again..!")
+      return ''
     }
   }
   else if ((three.textContent==='O' && five.textContent==='O' && seven.textContent==='')||
@@ -1520,14 +1666,17 @@ function botNine(prev) {
     if (three.textContent==='O' && five.textContent==='O') {
       seven.textContent='O'
       alert("You Lost the Game...Try Again..!")
+      return ''
     }
     else if (three.textContent==='O' && seven.textContent==='O') {
       five.textContent='O'
       alert("You Lost the Game...Try Again..!")
+      return ''
     }
     else {
       three.textContent='O'
       alert("You Lost the Game...Try Again..!")
+      return ''
     }
   }
     else if ((three.textContent==='X') &&(six.textContent==='')||(three.textContent==='' && six.textContent==='X')){
@@ -1562,6 +1711,7 @@ function botNine(prev) {
         }
         else {
           alert("Game Tied no chance of Winning..Try Again...!")
+          return ''
         }
     }
   }
@@ -1578,4 +1728,39 @@ function botWinning() {
     alert("You Lost the Game...Try Again..!")
   }
 
+}
+function playerWinning() {
+  //plater winning case is four six and nine
+  if (one.textContent==='') {
+    one.textContent='O'
+    botWinning()
+  }
+  else if (two.textContent==='') {
+    two.textContent='O'
+    botWinning()
+  }
+  else if (three.textContent==='') {
+    three.textContent='O'
+    botWinning()
+  }
+  else if (four.textContent==='') {
+    four.textContent='O'
+    botWinning()
+  }
+  else if (five.textContent==='') {
+    five.textContent='O'
+    botWinning()
+  }
+  else if (six.textContent==='') {
+    six.textContent='O'
+    botWinning()
+  }
+  else if (seven.textContent==='') {
+    seven.textContent='O'
+    botWinning()
+  }
+  else if (eight.textContent==='') {
+    eight.textContent='O'
+    botWinning()
+  }
 }
