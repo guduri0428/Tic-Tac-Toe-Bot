@@ -72,7 +72,7 @@ one.addEventListener('click',function (){
       if ((two.textContent==='X' && three.textContent==='X')||
       (four.textContent==='X' && seven.textContent==='X')||
       (five.textContent==='X' && nine.textContent==='X')) {
-        alert("You Won the Game....!")
+        alert("Congratulations.. You Won the Game....!")
         return ''
       }
     botOne('one')
@@ -92,7 +92,7 @@ two.addEventListener('click',function () {
       two.textContent='X'
       if ((one.textContent==='X' && three.textContent==='X')||
       (five.textContent==='X' && eight.textContent==='X')) {
-        alert("you Won the Game....!")
+       alert("Congratulations.. You Won the Game....!")
         return ''
       }
       botTwo('two')
@@ -112,7 +112,7 @@ three.addEventListener('click',function () {
       if ((two.textContent==='X' && one.textContent==='X')||
       (five.textContent==='X' && seven.textContent==='X')||
       (six.textContent==='X' && nine.textContent==='X')) {
-        alert("you Won the Game....!")
+        alert("Congratulations.. You Won the Game....!")
         return ''
       }
       botThree('three')
@@ -130,7 +130,7 @@ four.addEventListener('click',function () {
       four.textContent='X'
       if ((five.textContent==='X' && six.textContent==='X')||
       (one.textContent==='X' && seven.textContent==='X')){
-        alert("you Won the Game....!")
+        alert("Congratulations.. You Won the Game....!")
         return ''
       }
     botFour('four')
@@ -149,7 +149,7 @@ six.addEventListener('click',function () {
       six.textContent='X'
       if ((five.textContent==='X' && four.textContent==='X')||
       (three.textContent==='X' && nine.textContent==='X')) {
-        alert("you Won the Game....!")
+        alert("Congratulations.. You Won the Game....!")
         return ''
       }
     botSix('six')
@@ -169,7 +169,7 @@ seven.addEventListener('click',function () {
       if ((five.textContent==='X' && three.textContent==='X')||
       (four.textContent==='X' && one.textContent==='X')||
       (eight.textContent==='X' && nine.textContent==='X')) {
-        alert("you Won the Game....!")
+        alert("Congratulations.. You Won the Game....!")
         return ''
       }
   botSeven("seven")
@@ -187,7 +187,7 @@ eight.addEventListener('click',function () {
       eight.textContent='X'
       if ((seven.textContent==='X' && nine.textContent==='X')||
       (five.textContent==='X' && two.textContent==='X')){
-        alert("you Won the Game....!")
+       alert("Congratulations.. You Won the Game....!")
         return ''
       }
     botEight('eight')
@@ -206,7 +206,7 @@ nine.addEventListener('click',function () {
       if ((five.textContent==='X' && one.textContent==='X')||
       (eight.textContent==='X' && seven.textContent==='X')||
       (six.textContent==='X' && three.textContent==='X')) {
-        alert("You Won the Game....!")
+       alert("Congratulations.. You Won the Game....!")
         return ''
       }
     botNine('nine')
